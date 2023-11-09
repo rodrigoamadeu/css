@@ -1,0 +1,19 @@
+
+
+@keyframes toTop {
+    from {
+        top: 0;
+    }
+    to {
+        top: -1rem;
+    }
+}
+
+@keyframes toFly {
+    from {
+        left: -50rem;
+    }
+    to {
+        top: 0;
+    }
+}
