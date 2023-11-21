@@ -11,8 +11,12 @@
 
     &__item {
         margin: 1rem;
-        width: calc(80% / 5 - 1rem);
+        width: calc(90% / 5 - 1rem);
         text-align: center;
+        img {
+            border-radius: 1rem;
+            width: 40%;
+        }
         span {
             color: $color-secondary;
         }

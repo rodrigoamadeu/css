@@ -2,17 +2,21 @@
 header {
     width: 100%;
     height: 100%;
-    
     background-image: url(../assets/images/baner-header.png);
-        .container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .container {
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
         
+        
+
         .hero {
             background-repeat: no-repeat;
             background-position: top center;
-            height: 55rem;
+            height: 50rem;
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -32,10 +36,9 @@ header {
                 font-family: arial;
                 text-shadow: none;
             }
-
-            
-            
+        
         }
 
     }
+
 }

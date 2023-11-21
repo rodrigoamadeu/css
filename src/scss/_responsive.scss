@@ -1,0 +1,212 @@
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+    body {
+        font-size: 1.6rem;
+    }
+    .container {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+    .logo {
+        width: 40%;
+    } 
+    .nav {
+        width: 40%;
+    }
+    .vitrine {
+        grid-template-columns: repeat(2, 1fr);
+        &__item{
+            box-shadow: 0 0 2px 2px rgba(25 , 25 , 25 , .2);
+        }
+    }
+    
+    
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px){
+   
+    header {
+        flex-direction: column;
+        align-items: center;
+        .logo {
+            width: 40%;
+            margin-bottom: 4rem;
+        }
+        .nav {
+            width: 100%;
+            justify-content: space-around;
+        }
+        .hero {
+            h1 {
+                text-align: center;
+                width: 100%;
+                font-size: 2rem;
+            }
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                font-size: 3rem;
+                font-family: arial;
+                text-shadow: none;
+                font-size: 1.4rem;
+            }
+            
+        }
+    }
+    .vitrine {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #promocoes {
+        background-color: white;
+        width: 100%;
+    
+        .container {
+            max-width: 100%;
+            padding: 1rem;
+            article {
+                width: 100%;
+                .promocao {
+                    display: grid;
+                    gap: 1rem;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-auto-rows: 20rem;
+                    grid-auto-flow: dense;
+                    &__wide {
+                        grid-column: span 1;
+                    }
+                    &__tall {
+                        grid-row: span 1;
+                    }
+    
+                    &__big {
+                        grid-column: span 1;
+                    }
+    
+                }
+            }
+    
+    
+        }
+    }
+    .steps {
+        &__item {
+            margin: 1rem;
+            width: calc(90% / 3 - 1rem);
+            text-align: center;
+            img {
+                border-radius: 1rem;
+                width: 40%;
+            }
+            span {
+                color: $color-secondary;
+            }
+        }
+    
+    }
+
+}
+@media only screen and (max-width: 425px) {
+    // até 425px qualquer class que tiver col- será com width 100%
+    //[class*="col-" ] {
+    //    width: 100%;
+    //   padding-left: 2rem;
+    //    padding-right: 2rem;
+    //}
+    header {
+        flex-direction: column;
+        align-items: center;
+        .logo {
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+        .nav {
+            width: 100%;
+            justify-content: space-around;
+        }
+        .hero {
+            h1 {
+                text-align: center;
+                width: 100%;
+                font-size: 2rem;
+            }
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                font-size: 3rem;
+                font-family: arial;
+                text-shadow: none;
+                font-size: 1.4rem;
+            }
+            
+        }
+    }
+    .vitrine {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #promocoes {
+        background-color: white;
+        width: 100%;
+    
+        .container {
+            max-width: 100%;
+            padding: 1rem;
+            article {
+                width: 100%;
+                .promocao {
+                    display: grid;
+                    gap: 1rem;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-auto-rows: 20rem;
+                    grid-auto-flow: dense;
+                    &__wide {
+                        grid-column: span 1;
+                    }
+    
+                    &__tall {
+                        grid-row: span 1;
+                    }
+    
+                    &__big {
+                        grid-column: span 1;
+                    }
+    
+                }
+            }
+    
+    
+        }
+    }
+    .steps {
+        &__item {
+            margin: 1rem;
+            width: calc(90% / 2 - 1rem);
+            text-align: center;
+            img {
+                border-radius: 1rem;
+                width: 40%;
+            }
+            span {
+                color: $color-secondary;
+            }
+        }
+    
+    }
+
+}
+@media only screen and (max-width: 350px) {
+    header {
+        .nav {
+            width: 100%;
+            gap: 1rem;
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }    
+}

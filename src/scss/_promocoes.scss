@@ -1,7 +1,6 @@
 #promocoes {
     background-color: white;
     width: 100%;
-    
 
     .container {
         max-width: 100%;
@@ -24,7 +23,7 @@
                         object-fit: cover;
                         transition: 2s;
                         &:hover {
-                            transform: scale(1.2);
+                            transform: scale(1.1);
                         }
                     }
                     &--caption {
